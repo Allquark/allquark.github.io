@@ -32,7 +32,7 @@ h4,
 h5,
 h6 {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 700;
 }
 
@@ -59,11 +59,11 @@ hr.star-primary:after {
 }
 
 hr.star-light {
-    border-color: #fff;
+    border-color:  #{{ site.color.secondary-dark }};;
 }
 
 hr.star-light:after {
-    color: #fff;
+    color:  #{{ site.color.secondary-dark }};;
     background-color: #{{ site.color.primary }};
 }
 
@@ -82,7 +82,7 @@ hr.star-primary:after {
 
 header {
     text-align: center;
-    color: #fff;
+    color:  #{{ site.color.secondary-dark }};;
     background: #{{ site.color.primary }};
 }
 
@@ -98,10 +98,11 @@ header img {
 
 header .intro-text .name {
     display: block;
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 2em;
     font-weight: 700;
+    color:  #{{ site.color.secondary-dark }};;
 }
 
 header .intro-text .skills {
@@ -133,7 +134,7 @@ header .intro-text .skills {
     }
 
     .navbar-fixed-top .navbar-brand {
-        font-size: 2em;
+        font-size: 3em;
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
@@ -144,13 +145,13 @@ header .intro-text .skills {
     }
 
     .navbar-fixed-top.navbar-shrink .navbar-brand {
-        font-size: 1.5em;
+        font-size: 2em;
     }
 }
 
 .navbar {
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 700;
 }
 
@@ -159,6 +160,7 @@ header .intro-text .skills {
 }
 
 .navbar .navbar-nav {
+    font-size: 1.25em;
     letter-spacing: 1px;
 }
 
@@ -181,7 +183,7 @@ section h2 {
 }
 
 section.success {
-    color: #fff;
+    color: #183044;
     background: #{{ site.color.primary }};
 }
 
@@ -279,6 +281,14 @@ section.success {
     }
   } */
 
+.btn-success {
+    font-size: 20px;
+    border: solid 2px #183044;
+    color: #fff;
+    background: #183044;
+    transition: all .3s ease-in-out;
+}
+
 .btn-outline {
     margin-top: 15px;
     border: solid 2px #fff;
@@ -293,7 +303,7 @@ section.success {
 .btn-outline:active,
 .btn-outline.active {
     border: solid 2px #fff;
-    color: #{{ site.color.primary }};
+    color: #{{ site.color.secondary }};
     background: #fff;
 }
 
@@ -301,7 +311,7 @@ section.success {
     position: relative;
     margin-bottom: 0;
     padding-bottom: .5em;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #183044;
 }
 
 .floating-label-form-group input,
@@ -337,7 +347,7 @@ section.success {
 
 .floating-label-form-group::not(:first-child) {
     padding-left: 14px;
-    border-left: 1px solid #eee;
+    border-left: 1px solid #183044;
 }
 
 .floating-label-form-group-with-value label {
@@ -350,7 +360,7 @@ section.success {
 }
 
 form .row:first-child .floating-label-form-group {
-    border-top: 1px solid #eee;
+    border-top: 1px solid #183044;
 }
 
 footer {
