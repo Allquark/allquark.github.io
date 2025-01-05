@@ -6,6 +6,7 @@
 
 body {
     overflow-x: hidden;
+    zoom: 80%; /* Sets the zoom level to 80% */
 }
 
 p {
