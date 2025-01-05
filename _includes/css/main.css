@@ -283,9 +283,20 @@ section.success {
 
 .btn-success {
     font-size: 20px;
-    border: solid 2px #183044;
+    border: solid 2px #{{ site.color.secondary-dark }};
     color: #fff;
-    background: #183044;
+    background: #{{ site.color.secondary }};
+    transition: all .3s ease-in-out;
+}
+
+.btn-success:hover, 
+.btn-success:focus,
+.btn-success:active,
+.btn-success.active {
+    font-size: 20px;
+    border: solid 2px #{{ site.color.secondary-dark }};
+    color: #{{ site.color.secondary-dark }};;
+    background: #{{ site.color.primary }};
     transition: all .3s ease-in-out;
 }
 
